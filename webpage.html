@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rolloverstock</title>
+<style>
+*{
+box-sizing:border-box;
+}
+.bgimg{
+background:url(DesktopBanner.png);
+width:1415px;
+height:749px;
+background-size:cover;
+opacity:100%;
+}
+.pic{
+position:absolute;
+top:40px;
+left:100px;
+width:250px;
+height:160px;
+}
+#quote{
+position:absolute;
+top:200px;
+left:180px;
+width:1145px;
+height:162px;
+text-align:right;
+font:italic normal 900 38px Roboto;
+letter-spacing:0px;
+opacity:1;
+}
+.hgl-word{
+color:#ED2724;
+}
+p{
+text-align:center;
+top:939px;
+left:140px;
+width:1340px;
+height:158px;
+font:normal normal normal 26px poppins;
+color:#000000;
+opacity:1;
+}
+.container{
+position:absolute;
+top:370px;
+left:826px;
+width:500px;
+height:320px;
+border-radius:15px 15px 15px 0px;
+background:#FFFFFF 0% 0% no-repeat padding-box;
+box-shadow:0px 3px 6px #00000029;
+opacity:1;
+}
+input[type=text], input[type=number]{
+top:150px;
+width:363px;
+height:30px;
+margin:5px;
+border-radius:7px 7px 7px 7px;
+border:1px solid #040707;
+background:white;
+}
+input[type=text]:focus, input[type=number]:focus{
+outline:none;
+}
+.btn{
+background-color:#040707;
+color:white;
+top:300px;
+left:300px;
+width:231px;
+height:50px;
+border-radius:7px;
+opacity:1;
+}
+#row{
+position:absolute;
+width:135px;
+height:330px;
+top:1246px;
+left:100px;
+}
+#row1{
+position:absolute;
+width:135px;
+height:330px;
+top:1246px;
+left:155px;
+}
+#row2{
+position:absolute;
+width:135px;
+height:330px;
+top:1246px;
+left:210px;
+}
+#row3{
+position:absolute;
+width:135px;
+height:330px;
+top:1246px;
+left:265px;
+}
+#row4{
+position:absolute;
+width:135px;
+height:330px;
+top:1426px;
+left:155px;
+}
+#row5{
+position:absolute;
+width:135px;
+height:330px;
+top:1426px;
+left:210px;
+}
+.icon{
+position:absolute;
+width:120px;
+height:120px;
+top:950px;
+left:60px;
+}
+.icon1{
+position:absolute;
+width:120px;
+height:120px;
+top:950px;
+left:400px;
+}
+.icon2{
+position:absolute;
+width:120px;
+height:120px;
+top:950px;
+left:750px;
+}
+.icon3{
+position:absolute;
+width:120px;
+height:120px;
+top:950px;
+left:1100px;
+}
+.icon4{
+position:absolute;
+width:120px;
+height:120px;
+top:1200px;
+left:400px;
+}
+.icon5{
+position:absolute;
+width:120px;
+height:120px;
+top:1200px;
+left:750px;
+}
+#label1{
+position:absolute;
+font:normal normal 900 31px Roboto;
+top:1063px;
+left:40px;
+width:190px;
+height:80px;
+color:#040707;
+text-align:center;
+}
+#label2{
+position:absolute;
+font:normal normal 900 31px/40px Roboto;
+top:1063px;
+left:350px;
+width:218px;
+height:80px;
+color:#040707;
+text-align:center;
+}
+#label3{
+position:absolute;
+font:normal normal 900 31px/40px Roboto;
+top:1063px;
+left:660px;
+width:292px;
+height:80px;
+color:#040707;
+text-align:center;
+}
+#label4{
+position:absolute;
+font:normal normal 900 31px/40px Roboto;
+top:1063px;
+left:1060px;
+width:214px;
+height:80px;
+color:#040707;
+text-align:center;
+}
+#label5{
+position:absolute;
+font:normal normal 900 31px Roboto;
+top:1320px;
+left:350px;
+width:230px;
+height:80px;
+color:#040707;
+text-align:center;
+}
+#label6{
+position:absolute;
+font:normal normal 900 31px Roboto;
+top:1320px;
+left:700px;
+width:214px;
+height:80px;
+color:#040707;
+text-align:center;
+}
+#rectangle{
+position:absolute;
+top:1450px;
+width:1415px;
+height:150px;
+background-color:#E74A3F;
+}
+.right{
+float:right;
+position:absolute;
+top:1320px;
+left:900px;
+width:500px;
+height:430px;
+}
+.box{
+position:absolute;
+left:80px;
+top:30px;
+width:650px;
+height:175px;
+border-radius:9px;
+box-shadow:0px 3px 6px #00000029;
+background-color:#FFFFFF;
+text-align:center;
+font:italic normal 20px Roboto;
+}
+.logo{
+position:absolute;
+top:70px;
+left:50px;
+width:80px;
+height:40px;
+}
+.color-word{
+color:#105ABB;
+}
+h2{
+position:absolute;
+top:0px;
+left:50px;
+font:italic normal 900 30px Roboto;
+}
+.v1{
+position:absolute;
+top:80px;
+left:330px;
+height:75px;
+border:1px solid #E74A3F;
+}
+h4{
+position:absolute;
+left:50px;
+top:100px;
+font:normal normal normal 17px Roboto;
+}
+.word{
+color:#105ABB;
+}
+h5{
+position:absolute;
+left:350px;
+top:55px;
+font:normal normal normal 17px Roboto;
+}
+h3{
+position:absolute;
+left:640px;
+top:1700px;
+text-align:center;
+font:bold normal 33px Roboto;
+color:#040707;
+}
+.comment{
+position:absolute;
+left:80px;
+top:1820px;
+width:400px;
+height:300px;
+border-radius:9px;
+background:#F8F8F8;
+}
+h6{
+position:absolute;
+left:25px;
+top:10px;
+font:normal normal normal 20px Roboto;
+color:#040707;
+}
+.smallbox{
+position:absolute;
+top:1800px;
+left:100px;
+width:35px;
+height:35px;
+}
+.symbol{
+position:absolute;
+top:1810px;
+left:109px;
+width:15px;
+height:15px;
+}
+.avatar{
+position:absolute;
+top:230px;
+left:25px;
+width:55px;
+height:55px;
+}
+#user{
+position:absolute;
+top:220px;
+left:95px;
+width:40px;
+height:5px;
+color:#E74A3F;
+}
+.comment2{
+position:absolute;
+left:500px;
+top:1820px;
+width:400px;
+height:300px;
+border-radius:9px;
+background:#F8F8F8;
+}
+.comment3{
+position:absolute;
+left:920px;
+top:1820px;
+width:400px;
+height:300px;
+border-radius:9px;
+background:#F8F8F8;
+}
+.smallbox1{
+position:absolute;
+top:1800px;
+left:520px;
+width:35px;
+height:35px;
+}
+.symbol1{
+position:absolute;
+top:1810px;
+left:529px;
+width:15px;
+height:15px;
+}
+.smallbox2{
+position:absolute;
+top:1800px;
+left:940px;
+width:35px;
+height:35px;
+}
+.symbol2{
+position:absolute;
+top:1810px;
+left:949px;
+width:15px;
+height:15px;
+}
+#square{
+position:absolute;
+top:2200px;
+width:1415px;
+height:300px;
+background-color:#040707;
+}
+.cmpnylogo{
+position:absolute;
+top:10px;
+left:640px;
+width:135px;
+height:150px;
+}
+#home{
+position:absolute;
+top:140px;
+left:520px;
+width:400px;
+height:5px;
+color:#FFFFFF;
+font:normal normal medium 20px Roboto;
+}
+#contact{
+position:absolute;
+top:190px;
+left:520px;
+width:400px;
+height:10px;
+color:#FFFFFF;
+font:normal normal normal 20px Roboto;
+}
+hr{	
+background:white;
+margin-top:239px;
+width:85%;
+}
+#policy{
+position:absolute;
+top:250px;
+left:120px;
+width:60px;
+height:5px;
+color:#E7ECF0;
+font:normal normal normal 12.5px Roboto;
+}
+#terms{
+position:absolute;
+top:250px;
+left:220px;
+width:60px;
+height:5px;
+color:#E7ECF0;
+font:normal normal normal 12.5px Roboto;
+}
+#refund{
+position:absolute;
+top:250px;
+left:320px;
+width:60px;
+height:5px;
+color:#E7ECF0;
+font:normal normal normal 12.5px Roboto;
+}
+#rights{
+position:absolute;
+top:250px;
+left:640px;
+width:100px;
+height:5px;
+color:#E7ECF0;
+font:normal normal normal 12.5px Roboto;
+}
+.facebook{
+position:absolute;
+top:252px;
+left:1120px;
+width:20px;
+height:20px;
+}
+.youtube{
+position:absolute;
+top:252px;
+left:1150px;
+width:24px;
+height:20px;
+}
+.twitter{
+position:absolute;
+top:252px;
+left:1180px;
+width:20px;
+height:20px;
+}
+.pinterest{
+position:absolute;
+top:252px;
+left:1210px;
+width:20px;
+height:20px;
+}
+.instagram{
+position:absolute;
+top:252px;
+left:1240px;
+width:20px;
+height:20px;
+}
+.linkedin{
+position:absolute;
+top:252px;
+left:1270px;
+width:20px;
+height:20px;
+}
+.dot{
+height:10px;
+width:10px;
+background-color:#ECECEC;
+border-radius:50%;
+display:inline-block;
+}
+.dot1{
+height:10px;
+width:10px;
+background-color:#E74A3F;
+border-radius:50%;
+display:inline-block;
+}
+#smalldot{
+position:absolute;
+top:2140px;
+left:660px;
+}
+</style>
+</head>
+<body>
+<div class="bgimg">
+<img src="logo.png" class="pic">
+<h1 id="quote">SKYROCKET YOUR SURPLUS STOCK <br>SALE JOURNEY WITH <span class="hgl-word">ROLLOVERSTOCK!</span></h1>
+<form action="/action_page.php" class="container">
+<center>
+<table>
+<tr><td height=50></td></tr>
+<tr><td><input type="text" placeholder="Name" name="name" required></td></tr>
+<tr><td><input type="text" placeholder="Email Id" name="email" required></td></tr>
+<tr><td><input type="number" placeholder="Phone number" name="phno" required></td></tr>
+<tr><td><button type="submit" class="btn">Register Now</button></td></tr>
+</table>
+</center>
+</form>
+</div>
+<p>Rolloverstock is a trusted online B2B eCommerce marketplace that connects manufacturers,wholesalers,<br>
+distributors,and retailers to sell and purchase bulk quantities of surplus stock from a wide variety of categories<br>
+ranging from HomeAppliances,Furniture,Electronics,etc at wholesale prices.We provide a platform for sellers to<br>
+create their online store and sell items instantly.</p>
+<div class="row">
+<img src="icon.png" class="icon">
+<h2 id="label1">Quick & Easy <br>Registration</h2>
+</div>
+<div class="row1">
+<img src="icon1.png" class="icon1">
+<h2 id="label2">8 Lakh+ <br>Verified Sellers</h2>
+</div>
+<div class="row2">
+<img src="icon2.png" class="icon2">
+<h2 id="label3">16000+ pin codes <br>available for delivery</h2>
+</div>
+<div class="row3">
+<img src="icon3.png" class="icon3">
+<h2 id="label4">2Crore+ <br>Customer Base</h2>
+</div>
+<div class="row4">
+<img src="icon4.png" class="icon4">
+<h2 id="label5">Earn 5x Monthly</h2>
+</div>
+<div class="row5">
+<img src="icon5.png" class="icon5">
+<h2 id="label6">Assured Stock <br>Clearance</h2>
+</div>
+<div id="rectangle">
+<div class="box">
+<h2>Need a GST number but don't have one?</h2>
+<img src="taxlogo.png" class="logo">
+<h4>You can apply for GSTIN with<br><span class="color-word">TaxBuddy easily.</span></h4>
+<div class="v1"></div>
+<h5>You can also apply for GSTIN on the<br><span class="word">Government Portal</span></h5>
+</div>
+</div>
+<img src="phoneimg.png" class="right">
+<h3>Testimonials</h3>
+<div class="comment">
+<h6>Lorem Ipsum is simply dummy text of the <br>
+printing and typesetting industry. Lorem <br>
+Ipsum has been the industry's standard <br>
+dummy text ever since the 1500s, Lorem <br>
+Ipsum is simply dummy text of the printing <br>
+and typesetting industry.</h6>
+<img src="Ellipse.png" class="avatar">
+<p id="user">UserName</p>
+</div>
+<img src="Rectangle.png" class="smallbox">
+<img src="awsm-quote.png" class="symbol">
+<div class="comment2">
+<h6>Lorem Ipsum is simply dummy text of the <br>
+printing and typesetting industry. Lorem <br>
+Ipsum has been the industry's standard <br>
+dummy text ever since the 1500s, Lorem <br>
+Ipsum is simply dummy text of the printing <br>
+and typesetting industry.</h6>
+<img src="Ellipse.png" class="avatar">
+<p id="user">UserName</p>
+</div>
+<img src="Rectangle.png" class="smallbox1">
+<img src="awsm-quote.png" class="symbol1">
+<div class="comment3">
+<h6>Lorem Ipsum is simply dummy text of the <br>
+printing and typesetting industry. Lorem <br>
+Ipsum has been the industry's standard <br>
+dummy text ever since the 1500s, Lorem <br>
+Ipsum is simply dummy text of the printing <br>
+and typesetting industry.</h6>
+<img src="Ellipse.png" class="avatar">
+<p id="user">UserName</p>
+</div>
+<img src="Rectangle.png" class="smallbox2">
+<img src="awsm-quote.png" class="symbol2">
+<div id="smalldot">
+<span class="dot1"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+<div id="square">
+<img src="Roll overstock.png" class="cmpnylogo">
+<p id="home">Home&emsp;&nbsp;About&emsp;&nbsp;Shop</p>
+<p id="contact">Contact@rolloverstock.com&nbsp;|&nbsp;+91&nbsp;72000&nbsp;72009</p>
+<hr>
+<p id="policy">Privacy&nbsp;Policy</p>
+<p id="terms">Terms&nbsp;of&nbsp;service</p>
+<p id="refund">Returns&nbsp;&&nbsp;Refund&nbsp;Policy</p>
+<p id="rights">©&nbsp;2020&nbsp;·&nbsp;All&nbsp;rights&nbsp;reserved</p>
+<img src="Facebook.png" class="facebook">
+<img src="youtube.png" class="youtube">
+<img src="Twitter.png" class="twitter">
+<img src="pinterest.png" class="pinterest">
+<img src="instagram.png" class="instagram">
+<img src="Linkedin.png" class="linkedin">
+</div>
+</body>
+</html>
